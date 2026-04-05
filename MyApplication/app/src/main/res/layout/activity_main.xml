@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:stretchColumns="1">
+
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/textView"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginStart="32dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginEnd="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="Hello World!"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintHorizontal_bias="0.449"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintVertical_bias="0.342" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <Button&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/btn1"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginStart="156dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="59dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginEnd="165dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginBottom="356dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="Clickme"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/textView" />&ndash;&gt;-->
+
+    <TableRow android:padding="5dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="New Product form"
+            android:typeface="serif"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/small_size"/>
+
+    </TableRow>
+
+    <TableRow android:padding="5dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="@string/prd_name:"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/prod_code"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Product Name:"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/prod_name"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="true"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Product Price:"/>
+        <EditText
+            android:id="@+id/prod_price"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/add_button"
+            android:text="Add Product"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:text="Cancel"
+            android:layout_weight="0"
+            android:layout_height="wrap_content" />
+            />
+    </TableRow>
+    <TableRow android:padding="5dp">
+        <TextView
+            android:id="@+id/fruits_view"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </TableRow>
+
+</TableLayout>
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etUser"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etPass"
+        android:hint="Password"
+        android:layout_below="@id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Login"
+        android:layout_below="@id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

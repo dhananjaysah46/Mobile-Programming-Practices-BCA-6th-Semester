@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fragment Logics in Android</string>
+    <string name="heading">Two Fragment in One Activity</string>
+    <string name="fragment1_button">Displaying First Fragment</string>
+    <string name="fragment2_button">Displaying Second Fragment</string>
+    <string name="fragment1_text1">Displaying context of the First Fragment</string>
+    <string name="fragment2_text1">Displaying context of the Second Fragment</string>
+
+</resources>
